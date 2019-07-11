@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "olapy"
+version = "0.9.1"
+description = "OLAP Engine"
+
+license = "LGPL v2.1"
+
+authors = [
+    "Abilian SAS <contact@abilian.com>"
+]
+
+readme = 'README.rst'
+
+repository = "https://github.com/abilian/olapy"
+homepage = "https://github.com/abilian/olapy"
+
+keywords = ['OLAP', 'BIGDATA']
+
+[tool.poetry.dependencies]
+python = "~3.6"  # Compatible python versions must be declared here
+toml = "^0.9"
+# Dependencies with extras
+#requests = { version = "^2.13", extras = [ "security" ] }
+## Python specific dependencies with prereleases allowed
+#pathlib2 = { version = "^2.2", python = "~2.7", allows-prereleases = true }
+## Git dependencies
+#cleo = { git = "https://github.com/sdispater/cleo.git", branch = "master" }
+
+# Optional dependencies (extras)
+pyspark = { version = "^2.2", optional = true }
+typing = "^3.7"
+pandas = "^0.24.2"
+spyne = "=2.13.9a0"
+SQLAlchemy = "^1.3"
+xmlwitch = "^0.3.0"
+attrs = "^19.1"
+pyyaml = "^4.2b1"
+regex = "^2019.6"
+click = "^7.0"
+
+
+
+[tool.poetry.dev-dependencies]
+#xmla = { git = "https://github.com/mouadhkaabachi/olap/tree/master/xmla", branch = "master"}
+
+PrettyTable = "^0.7"
+tox = "^3.13"
+gprof2dot = "^2017.9"
+ipdb = "^0.12.0"
+mccabe = "^0.6.1"
+pip-tools = "^3.8"
+py-cpuinfo = "^5.0"
+pytest = "^5.0"
+pytest-cov = "^2.7"
+flake8 = "^3.7"
+flake8-tidy-imports = "^2.0"
+mastool = "^0.1.3"
+pylint = "^2.3"
+pre-commit = "^1.17"
+isort = "^4.3"
+sphinx-click = "^2.2"
+sphinx-rtd-theme = "^0.4.3"
+
+
+
+[tool.poetry.scripts]
+olapy = 'olapy.__main__:cli'
+etl = 'olapy.etl.etl:run_etl'
+
