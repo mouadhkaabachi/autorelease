@@ -1,0 +1,6 @@
+pip-tools
+tox
+flask
+pytest
+commitizen
+python-semantic-release
