@@ -6,13 +6,14 @@ description = "autorelease workflow"
 license = "LGPL v2.1"
 
 authors = [
-    "Mouadh Kaabachi <mouadh.kaabachi@gmail.com>"
+    "Mouadh Kaabachi <mouadh.kaabachi@gmail.com>",
+    "Emmanuel Sciara <emmanuel.sciara@gmail.com>"
 ]
 
 readme = 'README.rst'
 
-repository = "https://github.com"
-homepage = "https://github.com"
+repository = "https://github.com/esciara/autorelease"
+homepage = "https://github.com/esciara/autorelease"
 
 keywords = ['devops', 'release']
 
@@ -21,13 +22,12 @@ python = "~3.6"  # Compatible python versions must be declared here
 toml = "^0.9"
 # Dependencies with extras
 
-
-
 commitizen = "^1.5"
 pip-tools = "^3.8"
 tox = "^3.13"
 pytest = "^5.0"
 python-semantic-release = "^4.1"
+
 [tool.poetry.dev-dependencies]
 
 
